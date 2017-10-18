@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_toolbar2"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/info_text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:text="Anton Leontsev"
+            android:textSize="26sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_view1"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/info_text2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:text="email:aleontsev@gmail.com"
+            android:textSize="26sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_view2"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/info_text3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:text="skype:hermes_just_the_god"
+            android:textSize="26sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view4"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_view3"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/info_text4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:text="stackoverflow:leontsev-anton "
+            android:textSize="26sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/card_view4"
+        android:layout_gravity="left"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="20dp"
+        card_view:cardBackgroundColor="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/info_text5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="@dimen/fab_margin"
+            android:text="mobile: +7(985)-121-45-94"
+            android:textSize="26sp" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent"
+        android:onClick="onClickBack"
+        android:paddingLeft="2sp"
+        android:paddingRight="2sp"
+        android:text="@string/backtofive"
+        android:textSize="20sp"
+        tools:paddingBottom="10sp" />
+</RelativeLayout>
